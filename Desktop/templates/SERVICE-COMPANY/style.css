@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap" );
+
+:root{
+    --gray: lavender;
+    --red: rgb(233, 13, 13);
+    --navy: rgb(8, 8, 56);
+    --white: white;
+
+    /* for text */
+    --text: rgb(32, 24, 24);
+    /* for h1 */
+    --h1: rgb(33, 33, 92);
+}
+
+*{
+     box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+/* styling the nav bar */
+.nav-div{
+    width: 80%;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+nav{
+    margin-left: 100px;
+    margin-top: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 25px;
+    color: var(--navy);
+    font-family: sans-serif;
+   font-size: 20px;
+}
+
+
+/* nav on hover */
+nav ul li:hover{
+    color: var(--red);
+}
+
+/* THE ITG */
+.ITG{
+    position: fixed;
+    left: 50px;
+    background: var(--white);
+    width: 8%;
+    height: 60px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+    border: 7px solid var(--navy);
+    color: var(--navy);
+
+    z-index: 1;
+}
+
+.ITG:hover{
+    color: var(--red);
+    border: 7px solid var(--red);
+}
+
+/* image */
+.image-container{
+   margin-top: 50px; 
+   width: 86%;
+   border-bottom: 3px solid var(--navy);
+}
+
+/* styling the consulting service */
+.consulting-cnt{
+    width: 50%;
+    position: relative;
+    left: 460px;
+    right: 0;
+    bottom: 250px;
+}
+
+/* the general h1 */
+h1{
+    color: var(--h1);
+    font-size: 4em;
+    
+}
+
+/* geneeral p tag */
+p{
+    color: var(--text);
+    font-size: .90em;
+}
+
+.first-h1{
+    margin-left: 40px;
+}
+
+
+.consulting{
+    /* width: 120%; */
+    height: 450px;
+    background: var(--gray);
+}
+
+/* the div the join the p tag and my first-p */
+.line-p{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* my line under consulting */
+.line{
+width: 5%;
+height: 2px;
+margin-top: 8px;
+margin-right: 10px;
+font-size: 1em;
+flex-grow: 1;
+background-color: var(--h1);
+}
+
+/* my first p tag */
+.first-p{
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 0px;
+    flex-grow: 1;
+}
+
+/* styling the plis-more */
+.plus-more{
+    float: right;
+    margin: 0;
+    display: flex;
+    width: 35%;
+}
+
+.plus{
+    min-width: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 0;
+    background: var(--navy);
+    color: var(--white);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.find-more{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 0;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1.2em;
+    text-align: center
+}
+
+/* the plus sign and find out more on hover */
+.plus:hover{
+    background: var(--red);
+}
+
+.find-more:hover{
+    background: var(--navy);
+}
+
+/* styling our services */
+.services-cnt{
+    width: 100%;
+}
+
+.services-cnt-2{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--navy);
+    height: 400px;
+}
+
+.bug{
+    width: 70%;
+}
+
+.services-cnt-2  h1{
+    display: inline-block;
+    position: relative;
+    left: 210px;
+    color: var(--white);
+    width: 55%;
+    margin: 0 auto;
+    font-size: 50px;
+    text-align: justify;
+}
+
+.services-cnt-2  p{
+    width: 55%;
+    color: var(--white);
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+/* styling my six div boxes */
+.services-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0px auto;
+    padding: 50px 0;
+}
+
+/* styling the each div all together */
+.box{
+    background: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    width: 30%;
+    height: 50vh;
+    position: relative;
+    bottom: 270px;
+    box-shadow: 10px 10px var(--white), 10px 10px 0 3px var(--gray);
+    margin-top: 100px;
+}
+
+/* the h2 inside the divs */
+.box > h2{
+    color: var(--h1);
+    font-size: 30px;
+    padding: 0 25px;
+}
+
+/* the p tag inside the divs */
+.box > p {
+    font-size: 15px;
+    padding: 0 25px;
+}
+
+/* the link */
+.box a{
+    padding: 0 25px;
+    color: var(--red);
+    outline: none;
+    text-decoration: none;
+} 
+
+/* the links on hover */
+.box a:hover{
+    color: var(--h1);
+}
+
+/* styling the testimonials */
+.testimonial-cont{
+    position: relative;
+    bottom: 170px;
+    background: var(--gray);
+    padding-top: 0;
+    height: 80vh;
+    border-bottom: 12px solid var(--navy);
+}
+
+.testimonial-cont > h3{
+    color: var(--navy);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 65px;
+}
+ /* the arrows and text */
+.arrows-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.arrows-cont > p {
+    font-size: 2em;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.testimonial-cont  img {
+    color: var(--navy);
+    height: 20px;
+    width: 90%;
+    align-self: center;
+}
+
+/* names under testimonial */
+.testimonial-names{
+   text-align: center;
+}
+
+.testimonial-names > p {
+    color: var(--red);
+    font-size: 1.2em;
+}
+
+.dots{
+    font-size: 4em;
+    color: var(--navy);
+}
+
+/* styling the find-more-cont */
+.find-more-cont{
+    width: 70%;
+    height: 350px;
+    margin: 0 auto;
+    background: var(--gray);
+    margin-top: 150px;
+}
+
+.find-more-cont > h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+/* line and text */
+.line-par-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+ 
+.line-par-cont  line{
+    height: 4px;
+    margin-top: 60px;
+    padding: 20px;
+} 
+
+.line-par-cont  p{
+    font-size: 1.2em;
+    margin-left: 90px;
+    width: 70%;
+}
+
+/* styling the plus-free evaluation */
+.plus-free{
+    float: right;
+    display: flex;
+    width: 35%;
+}
+
+.plus{
+    min-width: 57px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 0;
+    background: var(--navy);
+    color: var(--white);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.get-free{
+    width: 45%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 0;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1em;
+    text-align: center
+}
+
+/* the plus sign and get freev evaluation on hover */
+.plus:hover{
+    background: var(--red);
+}
+
+.get-free:hover{
+    background: var(--navy);
+}
+
+/* the contact us section */
+.contact-us-cnt{
+    background: var(--navy);
+    margin-top: 80vh;
+    width: 100%;
+    height: 80vh;
+}
+
+.contact-us-cnt > h2{
+    font-size: 2em;
+    text-align: center;
+    color: var(--white);
+}
+
+/* the form */
+.form-cont{
+    width: 70%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: auto auto 1fr 1fr;
+    grid-gap: 0.3em 0.6em;
+    grid-auto-flow: dense;
+}
+
+/* .names{
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    padding: auto;
+} */
+
+label{
+    color: var(--white);
+    font-size: 1.3em;
+}
+
+input{
+    height: 50px;
+    background: transparent;
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--white);
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    outline: none;
+    background: transparent;
+    color: var(--white);
+    border: none;
+    border-bottom: 2px solid var(--white);
+}
+
+#first-name{
+    width: 100%;
+}
+
+#last-name{
+    width: 100%;
+}
+
+#email{
+    width: 100%;
+}
+
+button{
+    background: transparent;
+    color: var(--white);
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+}
